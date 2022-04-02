@@ -144,7 +144,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    sound_trigger.primary.sm6150 \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libFileMux_proprietary \

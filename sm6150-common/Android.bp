@@ -755,24 +755,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "sound_trigger.primary.sm6150",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/sound_trigger.primary.sm6150.so"],
-		},
-	},
-	compile_multilib: "32",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.bluetooth_audio@2.0-impl",
 	owner: "xiaomi",
 	strip: {
