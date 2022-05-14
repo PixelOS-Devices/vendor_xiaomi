@@ -1399,7 +1399,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libMegviiFacepp-0.5.2",
+	name: "libMegviiFacepp-0.5.2_davinci",
+	stem: "libMegviiFacepp-0.5.2",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -2028,7 +2029,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmegface",
+	name: "libmegface_davinci",
+	stem: "libmegface",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -2181,7 +2183,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmpbase",
+	name: "libmpbase_davinci",
+	stem: "libmpbase",
 	owner: "xiaomi",
 	strip: {
 		none: true,

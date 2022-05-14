@@ -223,7 +223,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0-impl \
     libFaceGrade \
     libHalSuperSensorServer \
-    libMegviiFacepp-0.5.2 \
+    libMegviiFacepp-0.5.2_davinci \
     libSuperSensor \
     libSuperSensorCPU \
     libVDClearShot \
@@ -260,7 +260,7 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libft2vendor \
     libgf_hal \
-    libmegface \
+    libmegface_davinci \
     libmialgo_fs \
     libmialgo_rfs \
     libmialgo_sd \
@@ -269,7 +269,7 @@ PRODUCT_PACKAGES += \
     libmivendor_module_calibration \
     libmivendor_module_hall \
     libmivendor_module_motor \
-    libmpbase \
+    libmpbase_davinci \
     libremosaic_daemon \
     libremosaiclib \
     libsensorslog \
