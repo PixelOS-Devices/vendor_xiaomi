@@ -13,7 +13,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/xiaomi/sm6150-common/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -48,7 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
-    vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/xiaomi/sm6150-common/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -82,13 +83,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm6150-common/proprietary/vendor/lib/rfsa/adsp/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res.bin \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
     vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
-    vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+    vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_update_ecc_table.sql \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
     eglSubDriverAndroid \
@@ -127,8 +131,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    sound_trigger.primary.sm6150 \
-    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
     libMpeg4SwEncoder \
     libOmxAacDec \
     libOmxAlacDec \
@@ -146,6 +149,7 @@ PRODUCT_PACKAGES += \
     libOmxWmaDec \
     libadpcmdec \
     libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
     libdsd2pcm \
     libqcodec2 \
     librice \
@@ -183,6 +187,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.0 \
     com.qualcomm.qti.uceservice@2.1 \
     com.qualcomm.qti.uceservice@2.2 \
+    com.qualcomm.qti.uceservice@2.3 \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     com.dsi.ant@1.0-impl \
@@ -213,6 +218,7 @@ PRODUCT_PACKAGES += \
     libbtnv \
     libcacertclient \
     libcdfw \
+    libcdfw_remote_api \
     libcdsprpc \
     libcne \
     libcneapiclient \
@@ -278,6 +284,7 @@ PRODUCT_PACKAGES += \
     libsdm-disp-vndapis \
     libsdmextension \
     libsdsprpc \
+    libsoc_helper \
     libssd \
     libsystem_health_mon \
     libtime_genoff \
@@ -294,6 +301,9 @@ PRODUCT_PACKAGES += \
     qtimutex \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
+    vendor.qti.data.factory@2.2 \
+    vendor.qti.data.factory@2.3 \
+    vendor.qti.data.mwqem@1.0 \
     vendor.qti.data.slm@1.0 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
@@ -315,9 +325,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.dynamicdds@1.0 \
     vendor.qti.hardware.data.iwlan@1.0 \
     vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0_vendor \
+    vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.qccsyshal@1.0 \
     vendor.qti.hardware.radio.am@1.0 \
     vendor.qti.hardware.radio.ims@1.0 \
@@ -327,8 +339,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.ims@1.4 \
     vendor.qti.hardware.radio.ims@1.5 \
     vendor.qti.hardware.radio.ims@1.6 \
+    vendor.qti.hardware.radio.ims@1.7 \
     vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
     vendor.qti.hardware.radio.lpa@1.0 \
+    vendor.qti.hardware.radio.lpa@1.1 \
     vendor.qti.hardware.radio.qcrilhook@1.0 \
     vendor.qti.hardware.radio.qtiradio@1.0 \
     vendor.qti.hardware.radio.qtiradio@2.0 \
@@ -336,6 +350,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.qtiradio@2.2 \
     vendor.qti.hardware.radio.qtiradio@2.3 \
     vendor.qti.hardware.radio.qtiradio@2.4 \
+    vendor.qti.hardware.radio.qtiradio@2.5 \
+    vendor.qti.hardware.radio.qtiradio@2.6 \
     vendor.qti.hardware.radio.uim@1.0 \
     vendor.qti.hardware.radio.uim@1.1 \
     vendor.qti.hardware.radio.uim@1.2 \
@@ -343,17 +359,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
-    vendor.qti.hardware.slmadapter@1.0 \
     vendor.qti.hardware.soter@1.0 \
     vendor.qti.ims.callcapability@1.0 \
     vendor.qti.ims.callinfo@1.0 \
     vendor.qti.ims.factory@1.0 \
+    vendor.qti.ims.factory@1.1 \
     vendor.qti.ims.rcsconfig@1.0 \
     vendor.qti.ims.rcsconfig@1.1 \
     vendor.qti.ims.rcsconfig@2.0 \
+    vendor.qti.ims.rcsconfig@2.1 \
     vendor.qti.imsrtpservice@3.0-service-Impl \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
+    vendor.qti.latency@2.1 \
     com.qualcomm.qti.dpm.api@1.0_system_ext \
     fm_helium \
     lib-imsvideocodec \
@@ -373,10 +391,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0_system_ext \
     vendor.qti.imsrtpservice@3.0_system_ext \
-    SoterService \
     CACertService \
     CneApp \
     IWlanService \
+    SoterService \
     TimeService \
     PowerOffAlarm \
     QtiTelephonyService \
@@ -401,7 +419,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
-    android.hardware.keymaster@4.0-service-qti \
+    android.hardware.keymaster@4.1-service-qti \
     qcrild \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
