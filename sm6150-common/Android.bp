@@ -2903,23 +2903,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdisplayqos",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdisplayqos.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdpmqmihal",
 	owner: "xiaomi",
 	strip: {
@@ -3013,23 +2996,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libhdcpsrm.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libhdr_tm",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libhdr_tm.so"],
 		},
 	},
 	compile_multilib: "64",
@@ -3634,23 +3600,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqseed3",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqseed3.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqsocket",
 	owner: "xiaomi",
 	strip: {
@@ -3770,108 +3719,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsdedrm",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdedrm.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdm-color",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-color.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdm-colormgr-algo",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-colormgr-algo.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdm-diag",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-diag.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdm-disp-vndapis",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdmextension",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdmextension.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsdsprpc",
 	owner: "xiaomi",
 	strip: {
@@ -3948,23 +3795,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libtime_genoff.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libtinyxml2_1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libtinyxml2_1.so"],
 		},
 	},
 	compile_multilib: "64",
