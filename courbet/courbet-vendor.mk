@@ -314,9 +314,11 @@ PRODUCT_PACKAGES += \
     libc++_shared \
     libcamera_dirty \
     libcamera_scene \
+    libdisplayqos \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libft2vendor \
+    libhdr_tm \
     libhta_hexagon_runtime \
     libhvx_interface \
     libmegface.so_vendor \
@@ -329,9 +331,16 @@ PRODUCT_PACKAGES += \
     libmulticam_image_optical_zoom \
     libmulticam_video_optical_zoom \
     libnotifyaudiohal \
+    libqseed3 \
     librelight_only \
     libremosaiclib \
+    libsdedrm \
     libsdk_sr \
+    libsdm-color \
+    libsdm-colormgr-algo \
+    libsdm-diag \
+    libsdm-disp-vndapis \
+    libsdmextension \
     libsensorcal \
     libsensorndkbridge \
     libsensorslog \
@@ -346,6 +355,7 @@ PRODUCT_PACKAGES += \
     libswvdec \
     libsymphony-cpu \
     libthermalclient \
+    libtinyxml2_1 \
     libtriplecam_video_optical_zoom \
     libultrasound \
     libvideofilter_only \
