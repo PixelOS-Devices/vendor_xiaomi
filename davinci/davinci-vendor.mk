@@ -145,7 +145,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/davinci/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin
 
 PRODUCT_PACKAGES += \
-    btaudio_offload_if \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -269,7 +268,7 @@ PRODUCT_PACKAGES += \
     libmivendor_module_calibration \
     libmivendor_module_hall \
     libmivendor_module_motor \
-    libmpbase \
+    libmpbase_vendor \
     libremosaic_daemon \
     libremosaiclib \
     libsensorslog \
