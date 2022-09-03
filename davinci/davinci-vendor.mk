@@ -284,7 +284,6 @@ PRODUCT_PACKAGES += \
     libvidhance \
     mi.motor.daemon \
     sensors.ssc \
-    cnss-daemon \
     vendor.xiaomi.hardware.motor@1.0-service \
     mi_thermald \
     remosaic_daemon \

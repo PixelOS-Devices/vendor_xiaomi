@@ -2436,18 +2436,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_binary {
-	name: "cnss-daemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/cnss-daemon"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.xiaomi.hardware.motor@1.0-service",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service"],
