@@ -5417,6 +5417,18 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "cnss-daemon",
+	owner: "xiaomi",
+	srcs: ["proprietary/vendor/bin/cnss-daemon"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "dpmQmiMgr",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/dpmQmiMgr"],
