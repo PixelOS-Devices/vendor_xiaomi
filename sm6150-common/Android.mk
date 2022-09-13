@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter davinci phoenix surya toco violet,$(TARGET_DEVICE)),)
+ifneq ($(filter courbet davinci phoenix surya sweet toco violet,$(TARGET_DEVICE)),)
 
 endif
