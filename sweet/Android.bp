@@ -245,6 +245,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libqtigef",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqtigef.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsndmonitor",
 	owner: "xiaomi",
 	strip: {
@@ -274,6 +291,24 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "32",
 	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libxlog",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/vndk/libxlog.so"],
+		},
+	},
+	compile_multilib: "32",
+	check_elf_files: false,
+	relative_install_path: "vndk",
 	prefer: true,
 	soc_specific: true,
 }
@@ -2148,23 +2183,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libhta_hexagon_runtime",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libhta_hexagon_runtime.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libhvx_interface",
 	owner: "xiaomi",
 	strip: {
@@ -2950,18 +2968,6 @@ cc_prebuilt_binary {
 	name: "batterysecret",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/batterysecret"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "cnss-daemon",
-	owner: "xiaomi",
-	srcs: ["proprietary/vendor/bin/cnss-daemon"],
 	check_elf_files: false,
 	strip: {
 		none: true,
